@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wolne miejsce na dysku</title>
+</head>
+<body>
+    <h1>Przerwanie INT21, 36h</h1>
+    <h2>Sprawdz ilosc wolnego miejsca na dysku</h2>
+    <h3>Opis:</h3>
+    <p>Przerwanie odpowiada za wyswietlenie na rejestrach stanu pamieci na dysku. Rejestry sa w stanie przechowac liczbe
+        nie wieksza od 2^16, jesli zostanie przekroczona to rejestr ustawi sie na maksymalna mozliwa wartosc.</p>
+    <h3>Wejscie:</h3>
+    <p>AH - 36h</p>
+    <p>DL - numer dysku(0-biezacy, 1-A, 2-B, ...</p>
+    <h3>Wyjscie:</h3>
+    <p>AX - liczba sektorow w klastrze</p>
+    <p>BX - liczba dostepnych klasterow</p>
+    <p>CX - liczba bajtow w sektorze</p>
+    <p>DX - liczba klastrow na dysku</p>
+</body>
+</html>

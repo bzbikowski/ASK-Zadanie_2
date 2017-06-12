@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ustaw kursor</title>
+</head>
+<body>
+    <h1>Przerwanie INT10, 02h</h1>
+    <h2>Ustaw kursor w okreslonej pozycji</h2>
+    <h3>Opis:</h3>
+    <p>Przerwanie odpowiada za ustawienie kursora ekranu na okreslonej przez uzytkownika pozycji. Na rejestrze AH musimy ustawic
+    wartosc 02h, aby wywolac to przerwanie. Podawanie pozycji, które znajduja sie poza ekranem, beda skutkowac zniknieciem kursora.</p>
+    <h3>Wejscie:</h3>
+    <p>AH - 02h</p>
+    <p>DH - Wybor kolumny(x)</p>
+    <p>DL - Wybor wiersza(y)</p>
+    <h3>Wyjscie:</h3>
+    <p>Brak</p>
+</body>
+</html>

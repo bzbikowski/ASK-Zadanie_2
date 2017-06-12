@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ustaw date</title>
+</head>
+<body>
+    <h1>Przerwanie INT1A, 05h</h1>
+    <h2>Ustaw systemowa date w komputerze</h2>
+    <h3>Opis:</h3>
+    <p>Przerwanie odpowiada za pobranie argumentow z rejestrow oraz ustawienie na ich podstawie daty systemowej.
+        Wartosci w rejestrach musimy zapisac w kodzie BCD.</p>
+    <h3>Wejscie:</h3>
+    <p>AH - 04h</p>
+    <p>CH - dwie pierwsze cyfry roku(stulecie)</p>
+    <p>CL - dwie ostatnie cyfry roku</p>
+    <p>DH - miesiac</p>
+    <p>DL - dzien</p>
+    <h3>Wyjscie:</h3>
+    <p>Brak</p>
+</body>
+</html>
