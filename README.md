@@ -6,10 +6,12 @@ uznania przez autorów.
 Umożliwia on symulację realizacji dziesięciu funkcji przerwań procesora oferowanych przez moduł BIOS (można też użyć przerwań DOS).
 Wybrane funkcje powinny być różnorodne, dotyczyć różnych zasobów komputera PC np. zegara RTC, klawiatury, monitora
 ekranowego, pamięci dyskowej. Aplikacja powinna realizować dwa wątki:
+
 * dydaktyczny – prezentujący w wyczerpujący sposób opis działania funkcji oraz sposób jej programowego
 wykorzystania obejmujący sposób wywoływania oraz przekazywania parametrów oraz wyjaśniający znaczenie tych
 parametrów.
 * demonstracyjny – prezentujący wybrane funkcje w działaniu.
+
 W celu realizacji wątku demonstracyjnego do zbioru nazw dotychczas realizowanych komend (MOV, ADD, SUB) należy dodać
 INTxx, INTyy, INTzz, ….. , gdzie xx, yy, zz, …. oznaczają numery wybranych przerwań. W programie należy utworzyć STOS
 służący do przechowywania zawartości rejestrów procesora na czas wykonywania przerwań. (Szczegółowy opis mechanizmu
